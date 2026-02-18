@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class ScholarshipFee {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double tuition = sc.nextDouble();
+        double scholarshipPercent = sc.nextDouble();
+        double examFee = sc.nextDouble();
+        double libraryFee = sc.nextDouble();
+
+        double scholarship = tuition * scholarshipPercent / 100;
+        double afterScholarship = tuition - scholarship;
+        double finalFee = afterScholarship + examFee + libraryFee;
+
+        System.out.println("Final Payable Fee = " + finalFee);
+    }
+}
