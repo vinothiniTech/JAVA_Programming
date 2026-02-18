@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class WeeklyWage {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int daysWorked = sc.nextInt();
+        double wagePerDay = sc.nextDouble();
+        double bonus = sc.nextDouble();
+        double maintenance = sc.nextDouble();
+
+        double base = daysWorked * wagePerDay;
+        double finalWage = base + bonus - maintenance;
+
+        System.out.println("Final Weekly Wage = " + finalWage);
+    }
+}
