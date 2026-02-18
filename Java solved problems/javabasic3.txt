@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class GrocerySales {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double sales = sc.nextDouble();
+        double discountPercent = sc.nextDouble();
+        double gstPercent = sc.nextDouble();
+
+        double discount = sales * discountPercent / 100;
+        double afterDiscount = sales - discount;
+        double gst = afterDiscount * gstPercent / 100;
+        double finalRevenue = afterDiscount + gst;
+
+        System.out.println("Final Revenue = " + finalRevenue);
+    }
+}
