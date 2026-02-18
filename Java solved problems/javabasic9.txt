@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class HospitalBill {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int roomCharge = sc.nextInt();
+        int days = sc.nextInt();
+        int medicineCost = sc.nextInt();
+        int labFees = sc.nextInt();
+        int insurance = sc.nextInt();
+
+        int finalBill = (roomCharge * days) + medicineCost + labFees - insurance;
+
+        System.out.println("Payable Amount = " + finalBill);
+    }
+}
