@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class operator1{
+    public static void main(String[] args) {
+     Scanner scan = new Scanner(System.in);
+     int theoryMarks=scan.nextInt();
+     int practicalMarks=scan.nextInt();
+     int Average=(theoryMarks+practicalMarks)/2;
+     if(theoryMarks>=50 && practicalMarks>=50){
+        if(Average>=60){
+            System.out.println("PASS");
+        }
+        else{
+            System.out.println("FAIL");
+            scan.close();
+        }
+     }
+     
+     }
+    }
