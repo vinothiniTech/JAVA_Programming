@@ -5,7 +5,7 @@ public class forloop11{
 
         Scanner sc=new Scanner(System.in);
 
-        int n = sc.nextInt(); 
+        int n = sc.nextInt();
 
         double originalTotal = 0;
         double finalTotal = 0;
